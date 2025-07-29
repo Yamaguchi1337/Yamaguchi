@@ -1,27 +1,25 @@
-# Photo OCR Telegram Bot
+# Photo OCR Web App
 
-This repository contains a simple Telegram bot that transcribes text from photos using OCR.
+This repository provides a simple web interface to transcribe text from photos using OCR.
 
 ## Features
-- Receives a photo from a user.
-- Recognizes text in the photo using the Tesseract OCR engine through `pytesseract`.
-- Replies with the extracted text.
+- Upload a photo through a browser.
+- Recognize text in the photo using the Tesseract OCR engine via `pytesseract`.
+- Display the extracted text on the page.
 
 ## Requirements
 - Python 3.8+
-- A Telegram bot token (from [BotFather](https://t.me/BotFather)).
 - Tesseract OCR installed on the system.
 - Python packages listed in `requirements.txt`.
 
 ## Setup
-1. Install system package **Tesseract** (on Ubuntu: `sudo apt-get install tesseract-ocr`).
+1. Install the **Tesseract** system package (on Ubuntu: `sudo apt-get install tesseract-ocr`).
 2. Install the Python dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the bot (the token is already included in `photo_ocr_bot.py`):
+3. Run the web app:
    ```bash
-   python photo_ocr_bot.py
+   python app.py
    ```
-
-When you send a photo to the bot, it will reply with the recognized text.
+4. Open `http://localhost:8000` in your browser and upload a photo to see the recognized text.
